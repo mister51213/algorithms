@@ -2,6 +2,7 @@
 
 #include <vector>
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
@@ -47,9 +48,13 @@ public:
 			return *pNode;
 		}
 
-		bool operator!= (const Iterator &Dummy) const {
-			return pNode ? true : false;
+		bool operator < (const Node& right) const {
+			return pNode->val < right.val;
 		}
+
+		//bool operator!= (const Iterator &Dummy) const {
+		//	return pNode ? true : false;
+		//}
 
 		void Destroy() {
 			delete pNode;
@@ -119,10 +124,27 @@ public:
 	void Remove(T val) {
 		Iterator itr = List<T>::Iterator();
 		if (itr != nullptr) {
-
+			while (itr != end()) {
+				if (*itr == val) {
+					itr->previous->next = itr->next;
+					itr->next->previous = itr->previous;
+					itr.Destroy();
+					return;
+				}
+			}
 		}
 	}
 	void Sort() {
+		// Bubble Sort
+		for (Node* i = head; i->next != nullptr; i = i->next) {
+			for (Node* j = i; j->next != nullptr; j = j->next)
+				if (i < j)
+					swap(i, j);
+		}
+	}
+
+	void Swap(Node& a, Node& b) {
+		std::swap(&a, &b);
 	}
 
 	int length;

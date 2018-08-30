@@ -1,9 +1,2 @@
 ﻿  Source.cpp
-c:\users\n\source\repos\linkedlist\algorithms\list.h(39): error C2039: 'next': is not a member of 'List<int>::Node'
-  c:\users\n\source\repos\linkedlist\algorithms\list.h(63): note: see declaration of 'List<int>::Node'
-  c:\users\n\source\repos\linkedlist\algorithms\list.h(38): note: while compiling class template member function 'List<int>::Iterator &List<int>::Iterator::operator ++(void)'
-  c:\users\n\source\repos\linkedlist\algorithms\source.cpp(5): note: see reference to function template instantiation 'List<int>::Iterator &List<int>::Iterator::operator ++(void)' being compiled
-  c:\users\n\source\repos\linkedlist\algorithms\source.cpp(5): note: see reference to class template instantiation 'List<int>::Iterator' being compiled
-c:\users\n\source\repos\linkedlist\algorithms\list.h(40): error C2039: 'next': is not a member of 'List<int>::Node'
-  c:\users\n\source\repos\linkedlist\algorithms\list.h(63): note: see declaration of 'List<int>::Node'
-c:\users\n\source\repos\linkedlist\algorithms\list.h(41): error C2440: 'return': cannot convert from 'List<int>::Node' to 'List<int>::Iterator &'
+  Algorithms.vcxproj -> C:\Users\n\Source\Repos\algorithms\LinkedList\x64\Debug\Algorithms.exe
