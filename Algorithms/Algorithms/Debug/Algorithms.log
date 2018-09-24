@@ -1,0 +1,3 @@
+﻿  Source.cpp
+c:\users\n\source\repos\algorithms\linkedlist\algorithms\source.cpp(19): error C2440: 'static_cast': cannot convert from 'Child *' to 'Unrelated *'
+  c:\users\n\source\repos\algorithms\linkedlist\algorithms\source.cpp(19): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
